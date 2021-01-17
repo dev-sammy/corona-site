@@ -1,0 +1,232 @@
+@-webkit-keyframes pulse {
+  0% {
+    height: 280px;
+  }
+  100% {
+    background-color: 320px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    height: 280px;
+  }
+  100% {
+    background-color: 320px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #3a3081;
+}
+
+.virus-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: #eba345;
+  border-radius: 100%;
+}
+
+.virus-body .pores {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.virus-body .pores .pore-1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #755b22;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 35%;
+  left: 28%;
+}
+
+.virus-body .pores .pore-2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #755b22;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 80%;
+  left: 30%;
+}
+
+.virus-body .pores .pore-3 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #755b22;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 70%;
+  left: 70%;
+}
+
+.virus-body .pores .pore-4 {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #755b22;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 45%;
+  left: 57%;
+}
+
+.virus-body .pores .pore-5 {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #755b22;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 25%;
+  left: 70%;
+}
+
+.virus-body .spikes {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.virus-body .spikes .spike-1, .virus-body .spikes .spike-2, .virus-body .spikes .spike-3, .virus-body .spikes .spike-4, .virus-body .spikes .spike-5 {
+  width: 20px;
+  height: 320px;
+  border-radius: 50px;
+  background-color: #eba345;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.virus-body .spikes .spike-1 {
+  -webkit-transform: translate(-50%, -50%) rotate(5deg);
+          transform: translate(-50%, -50%) rotate(5deg);
+  left: 45%;
+  top: 55%;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1.15s;
+          animation-duration: 1.15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.virus-body .spikes .spike-2 {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  top: 45%;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.virus-body .spikes .spike-3 {
+  -webkit-transform: translate(-50%, -50%) rotate(-65deg);
+          transform: translate(-50%, -50%) rotate(-65deg);
+  left: 48%;
+  top: 48%;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.virus-body .spikes .spike-4 {
+  -webkit-transform: translate(-50%, -50%) rotate(-35deg);
+          transform: translate(-50%, -50%) rotate(-35deg);
+  left: 48%;
+  top: 48%;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.virus-body .spikes .spike-5 {
+  -webkit-transform: translate(-50%, -50%) rotate(-95deg);
+          transform: translate(-50%, -50%) rotate(-95deg);
+  left: 48%;
+  top: 48%;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1.35s;
+          animation-duration: 1.35s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+/*# sourceMappingURL=style.css.map */
